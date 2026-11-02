@@ -25,3 +25,10 @@ class Cart:
 
     def total_cost(self):
         return sum(item.cost for item in self.items)
+
+    def print_cart(self):
+        print("--- Danh sach dia trong gio ---")
+        for dvd in self.items:
+            print(f"- {dvd.title}")
+        print("-------------------------------")
+
