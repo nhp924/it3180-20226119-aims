@@ -27,6 +27,9 @@ class Cart:
         return sum(item.cost for item in self.items)
 
     def print_cart(self):
+        if len(self.items) == 0:
+            print("The cart is empty")
+            return
         print("--- Danh sach dia trong gio ---")
         for dvd in self.items:
             print(f"- {dvd.title}")
